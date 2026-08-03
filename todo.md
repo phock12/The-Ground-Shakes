@@ -94,7 +94,7 @@ Deliverable:
 ---
 
 # 4. Git Version Control Metrics & Current Blocker Log
-**Owner: All Team Members + Documentation Lead**
+**Owner: Perrin (Visual Design + Documentation Lead) + Frontend Member 2 + All team members +**
 
 ### Requirements to Complete:
 - Provide GitHub repository link
@@ -102,11 +102,11 @@ Deliverable:
 - List remaining application tasks
 
 ### Tasks:
-- [ ] Review commit history
-- [ ] Verify each member has contributions
-- [ ] Update README
-- [ ] Create final blocker list
-- [ ] Document remaining features
+- [x] Review commit history
+- [x] Verify each member has contributions
+- [x] Update README
+- [x] Create final blocker list
+- [x] Document remaining features
 
 Deliverable:
 - Final checkpoint report
@@ -152,5 +152,5 @@ Owner: Everyone
 - [ ] Frontend successfully communicates with backend
 - [ ] Database persistence verified
 - [ ] Authentication tested
-- [ ] Presentation prepared
+- [x] Presentation prepared
 - [ ] Demo workflow tested
