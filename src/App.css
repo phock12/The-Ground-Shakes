@@ -1,4 +1,108 @@
+//Global Color Pallete
+:root {
+  --forest-green: #2F3E2C;   <<E Dark
+  --muted-green: #5C7457;    <<E Sage
+  --pastel-green: #A3B18A;   <<E Moss
+  --off-white: #DAD7CD;      <<Earth Clay
+
+  --light-offwhite: #E8EDEB; <<Mod White
+  --deep-cyan: #B5C9C3;      <<Mod Grey 
+  --sea-foam: #8FD4C1;       <<Mod Accent
+
+  --text-main: #2F3E2C;      //Default Txt Color
+  --text-light: #E8EDEB;     //Secondary Text Color  
+}
+
+
+//Global page body design
+body {
+  background: linear--gradient(
+	135deg,
+	var(--light-offwhite),
+	Var(--off-white)
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+//Header design 
+h1, h2, h3 {
+  color: var(--forest-green);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(47, 62, 44, 0.15);
+}
+
+//Paragraph Design 
+p {
+  color: var(--text-main);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--earth-sage);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  color: var(--sea-foam);
+  text-decoration: underline;
+}
+
+
+//App layout wrappers  
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar-wrapper {
+  background: var(--forest-green);
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(47, 62, 44, 0.3);
+}
+
+.page-wrapper {
+  flex: 1;
+  padding: 2rem;
+}
+
+//Page Structure 
+.page-container {
+  background: var(--light-offwhite);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(47, 62, 44, 0.15);
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--forest-green);
+  margin-bottom: 1rem;
+}
+
+.page-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+//
 .App {
+  background: var(--pastel-green);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(47, 62, 44, 0.15)
   text-align: center;
 }
 
@@ -35,4 +139,43 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+//Generic button design
+button {
+  background: var(--muted-green);
+  color: var(--light-offwhite);
+  padding: 0.7rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: var(--sea-foam);
+  transform: translate(-2px);
+}
+
+
+//NavBar Buttons
+.navbar {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  background: var(--earth-sage);
+  color: var(--modern-white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.nav-button:hover {
+  background: var(--earth-moss);
+  transform: translateY(-2px);
 }
