@@ -211,9 +211,3 @@ const MapComponent = ({ quakes = [], isLoading = false, errorMessage = "" }) => 
 };
 
 export default MapComponent;
-
-    </div>
-  );
-};
-
-export default MapComponent;
