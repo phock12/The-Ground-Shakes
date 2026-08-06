@@ -1,9 +1,33 @@
-function About() {
+import MapComponent from "../MapComponent";
+
+function Home({ quakes, isLoading, errorMessage }) {
   return (
-    <div>
-      <h1>About Page</h1>
-      <p>This is the about page</p>
+    <div className="page-container">
+      <h1 className="page-title">The Ground Shakes</h1>
+
+      {isLoading ? (
+        <p className="page-content">Loading earthquakes...</p>
+      ) : (
+        <>
+          <p className="page-content">
+            Number of Earthquakes: {quakes.length}
+          </p>
+
+          {errorMessage && (
+            <p className="page-content page-error">
+              {errorMessage}
+            </p>
+          )}
+        </>
+      )}
+
+      <MapComponent
+        quakes={quakes}
+        isLoading={isLoading}
+        errorMessage={errorMessage}
+      />
     </div>
   );
 }
-export default About;
+
+export default Home;
